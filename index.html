@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050807"><link rel="manifest" href="manifest.json">
+<title>FIT 90</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div><p class="eyebrow">YOUR 90-DAY TRANSFORMATION</p><h1>FIT <span>90</span></h1></div><div class="day" id="dayCount">DAY 1 / 90</div></header>
+<main>
+<section class="hero panel"><div><p class="muted">TODAY'S PROGRESS</p><strong id="progressText">0%</strong><p class="muted" id="progressSub">A little progress every day.</p></div><div class="ring" id="ring"><b id="ringNum">0%</b></div></section>
+<section class="panel"><div class="sectionhead"><h2>Daily habits</h2><span class="tag">7 HABITS</span></div><div id="habits" class="habits"></div></section>
+<section class="grid">
+<section class="panel"><h2>Weight check-in</h2><label>Today's weight (kg)<input id="weight" type="number" min="20" max="300" step=".1" placeholder="e.g. 86"></label><button id="saveWeight">Save weight</button><p class="muted" id="weightMsg">Track trends, not daily fluctuations.</p></section>
+<section class="panel"><h2>Gym & movement</h2><label class="check"><input type="checkbox" id="gym"> Gym / workout completed</label><label class="check"><input type="checkbox" id="walk"> Walk / swim / active movement</label><label>Workout notes<textarea id="workoutNote" rows="2" placeholder="What did you do today?"></textarea></label><button id="saveMovement">Save activity</button></section>
+</section>
+<section class="panel"><h2>Food check-in</h2><div class="grid foodgrid"><label>Meals<textarea id="meals" rows="3" placeholder="Breakfast, lunch, dinner..."></textarea></label><label>Water (glasses)<input id="water" type="number" min="0" max="30" placeholder="e.g. 8"></label><label>Food / craving notes<textarea id="foodNote" rows="3" placeholder="What went well? Any cravings?"></textarea></label></div><button id="saveFood">Save food log</button></section>
+<section class="panel"><div class="sectionhead"><h2>Weekly report</h2><span class="tag">LAST 7 DAYS</span></div><div class="stats"><div><b id="avgProgress">0%</b><small>Avg. habits</small></div><div><b id="gymDays">0</b><small>Workout days</small></div><div><b id="weightChange">—</b><small>Weight change</small></div></div><div id="weekBars" class="bars"></div><p class="muted" id="reportNote">Your report builds as you log each day.</p></section>
+<p class="foot">Consistency over perfection. Eat enough, recover well, and make sustainable changes.</p>
+</main><nav><button class="active" data-target="top">TODAY</button><button data-target="report">REPORT</button></nav>
+<script src="app.js"></script>
+</body></html>
